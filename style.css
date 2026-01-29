@@ -133,7 +133,78 @@ h2 {
     section {
         margin: 10px;
     }
+    /* General Mobile-First Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevents side-scrolling on mobile */
 }
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* The Image Layout */
+.hero-container {
+    width: 100%;
+    line-height: 0; /* Removes tiny gap under images */
+}
+
+.responsive-img {
+    width: 100%;      /* Image fills the width of the phone */
+    height: auto;     /* Keeps the face from looking stretched */
+    display: block;
+    object-fit: cover;
+}
+
+/* Navigation - Mobile Friendly Stack */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Skills List - Grid for Mobile */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-grid li {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border-left: 4px solid #007bff;
+}
+
+/* Desktop Adjustment */
+@media (min-width: 768px) {
+    .responsive-img {
+        max-height: 500px; /* Prevents image from being too tall on PC */
+        object-position: center 20%; /* Focuses on the face if cropped */
+    }
+}
+}
+
 
 
 

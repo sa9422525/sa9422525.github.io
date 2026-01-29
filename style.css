@@ -103,21 +103,8 @@ h2 {
         margin: 10px;
     }
 }
-.resume-section {
-    text-align: center;
-}
 
-.resume-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 20px;
-    background: var(--accent);
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: 0.3s;
-}
+
 
 
 

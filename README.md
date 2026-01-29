@@ -12,8 +12,8 @@
 <button id="topBtn">⬆</button>
 
 <header class="fade-in">
-    <h1>Sohrab Ali</h1>
-    <p>Electrical Engineer</p>
+    <h1>SOHRAB ALI</h1>
+    <p>ELECTRICAL ENGINEER</p>
 </header>
 
 <nav>

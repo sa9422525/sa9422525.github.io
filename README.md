@@ -80,6 +80,5 @@
     <p>© 2026 Sohrab Ali</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

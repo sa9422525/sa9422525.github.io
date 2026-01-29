@@ -6,13 +6,21 @@
     gap: 20px;
 }
 
-.profile-pic {
-    width: 200px;         /* Adjust size as needed */
-    height: 200px;        /* Keep width and height the same for a circle */
-    object-fit: cover;    /* This prevents the photo from stretching */
-    border-radius: 50%;   /* Makes the image a circle */
-    border: 3px solid #333; /* Optional: adds a border */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.hero-image-container {
+    width: 100%;
+    max-width: 1000px; /* Limits width so it doesn't get too huge on desktop */
+    margin: 20px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.full-view-img {
+    width: 100%;
+    height: auto;      /* Maintains original aspect ratio */
+    display: block;
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
 }
 
 /* On larger screens, put text next to the photo */
@@ -126,6 +134,7 @@ h2 {
         margin: 10px;
     }
 }
+
 
 
 

@@ -1,4 +1,27 @@
-:root {
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 200px;         /* Adjust size as needed */
+    height: 200px;        /* Keep width and height the same for a circle */
+    object-fit: cover;    /* This prevents the photo from stretching */
+    border-radius: 50%;   /* Makes the image a circle */
+    border: 3px solid #333; /* Optional: adds a border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* On larger screens, put text next to the photo */
+@media (min-width: 768px) {
+    .profile-container {
+        flex-direction: row;
+        text-align: left;
+    }
+}:root {
     --bg: #f4f6f8;
     --text: #111;
     --card: #fff;
@@ -103,6 +126,7 @@ h2 {
         margin: 10px;
     }
 }
+
 
 
 
